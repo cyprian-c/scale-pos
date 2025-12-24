@@ -143,4 +143,4 @@ For support, email support@scale-pos.local or open an issue on GitHub.
 
 ---
 
-Made with ❤️ by the Cyprian Ocharo & scale-pos team
+Made by the Cyprian Ocharo & scale-pos team
