@@ -1,11 +1,11 @@
 <?php
 
+declare(strict_types=1);
+
 /**
  * scale-pos Entry Point
  * Front controller for all HTTP requests
  */
-
-declare(strict_types=1);
 
 define('APP_START', microtime(true));
 
