@@ -1,0 +1,61 @@
+{
+  "name": "stealth/scale-pos",
+  "description": "A modern, scalable Point of Sale system",
+  "type": "project",
+  "license": "MIT",
+  "keywords": ["pos", "point-of-sale", "retail", "inventory"],
+  "authors": [
+    {
+      "name": "scale-pos Team",
+      "email": "dev@scale-pos.local"
+    }
+  ],
+  "require": {
+    "php": "^8.1",
+    "ext-pdo": "*",
+    "ext-mbstring": "*",
+    "ext-json": "*",
+    "ext-openssl": "*",
+    "ext-curl": "*",
+    "vlucas/phpdotenv": "^5.5",
+    "monolog/monolog": "^3.0",
+    "firebase/php-jwt": "^6.8",
+    "respect/validation": "^2.2"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^10.0",
+    "fakerphp/faker": "^1.23",
+    "phpstan/phpstan": "^1.10"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    },
+    "files": [
+      "app/Helpers/functions.php"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "post-autoload-dump": [
+      "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+    ],
+    "test": "phpunit",
+    "test-coverage": "phpunit --coverage-html coverage",
+    "analyse": "phpstan analyse app"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "allow-plugins": {
+      "php-http/discovery": true
+    }
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}
