@@ -34,7 +34,7 @@ A modern, scalable Point of Sale system built with PHP.
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/scale-pos.git
+git clone https://github.com/cyprian-c/scale-pos.git
 cd scale-pos
 
 # Install dependencies
@@ -143,4 +143,4 @@ For support, email support@scale-pos.local or open an issue on GitHub.
 
 ---
 
-Made with ❤️ by the scale-pos team
+Made with ❤️ by the Cyprian Ocharo & scale-pos team
